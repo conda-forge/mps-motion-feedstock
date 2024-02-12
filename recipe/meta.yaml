@@ -38,7 +38,7 @@ requirements:
     - scipy
     - tqdm
     - typer
-    - typing-extensions
+    - typing_extensions
 test:
   imports:
     - mps_motion
