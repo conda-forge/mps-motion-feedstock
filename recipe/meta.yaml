@@ -11,7 +11,7 @@ source:
   sha256: 8cde4925e1ee21f7df574e84607d4ef5a123a57f5d7ecbb82359869d17ce3cac
 
 build:
-  number: 0
+  number: 1
   noarch: python
   entry_points:
     - "mps-motion=mps_motion.__main__:app"
@@ -19,10 +19,10 @@ build:
 
 requirements:
   host:
-    - python >=3.7
+    - python {{ python_min }}
     - pip
   run:
-    - python >=3.7
+    - python >={{ python_min }}
     - ap_features
     - cardiac-mps
     - daiquiri
@@ -40,6 +40,8 @@ requirements:
     - typer
     - typing_extensions
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - mps_motion
 
