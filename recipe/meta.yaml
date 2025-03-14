@@ -1,6 +1,6 @@
 {% set name = "mps-motion" %}
 {% set name_underscore = "mps_motion" %}
-{% set version = "0.4.7" %}
+{% set version = "0.5.0" %}
 
 package:
   name: "{{ name|lower }}"
@@ -8,7 +8,7 @@ package:
 
 source:
   url: "https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name_underscore }}-{{ version }}.tar.gz"
-  sha256: f27f29649a5735764513b220cbbaacd91319a0831d3b508ce022a7fdaf1b58de
+  sha256: a373bfb3deda59878d28cfcbf9c88694a61c2df4e8c04998fdccad8a2ffefba7
 
 build:
   number: 0
